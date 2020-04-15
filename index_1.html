@@ -8,12 +8,10 @@
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 		<title>Modified Funding Page</title>
 		<link href="index_1.css" rel="stylesheet" media="all">
-		<link href="css/hover.css" rel="stylesheet" media="all">
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
 	</head>
 	<body>
 	    <div class="topnav">
-            <a href="#home"><img src="index_1.jpg"/></a>
+            <a href="#home"><img src="image/index_1.jpg"/></a>
             <div class="effects">
             <a href="#news" class="hvr-wobble-to-bottom-right">Investment Management</a>
             <a href="#contact" class="hvr-wobble-to-bottom-right">Consultancy</a>
@@ -49,7 +47,7 @@
           <div class="flip-box">
           <div class="flip-box-inner">
            <div class="column flip-box-front">
-            <img src="image2.jpg" style="width:700px;height:600px">
+            <img src="image/image2.jpg" style="width:700px;height:600px">
             </div>
             <div class="flip-box-back">
                 <h2>Approach</h2>
@@ -63,7 +61,7 @@
           <div class="flip-box">
           <div class="flip-box-inner">
            <div class="column flip-box-front">
-            <img src="image3.jpg" style="width:700px;height:600px">
+            <img src="image/image3.jpg" style="width:700px;height:600px">
             </div>
             <div class="flip-box-back">
                 <h2>Ideas</h2>
@@ -83,7 +81,7 @@
             </center>
                 <div id="slider">
                     <div id="box">
-                        <a href="#"><img src="a.jpg"></a>
+                        <a href="#"><img src="image/a.jpg"></a>
                     </div>
                     <button class="prew fa fa-chevron-left" onclick="prewImage()"></button>
                     <button class="next fa fa-chevron-right" onclick="nextImage()"></button>
@@ -100,7 +98,7 @@
                         else if(i==image.length-2){
                             i=1;
                         }
-                    slider_content.innerHTML = "<img src="+image[i-1]+".jpg>";
+                    slider_content.innerHTML = "<img src="+"image/"+image[i-1]+".jpg>";
                     }
                     function prewImage(){
                         if(i>1){
@@ -110,7 +108,7 @@
                         {
                             i=image.length-2;
                         }
-                    slider_content.innerHTML = "<img src="+image[i-1]+".jpg>";
+                    slider_content.innerHTML = "<img src="+"image/"+image[i-1]+".jpg>";
                     }
                     setInterval(nextImage,2000);
                 </script>
