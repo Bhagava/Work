@@ -1,0 +1,279 @@
+.*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.topnav {
+    margin: -8px;
+    text-align: center;    
+    overflow: hidden;
+    height: 85px;
+    border-bottom: 1px solid black;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the color of links on hover */
+.effects a:hover {
+  background-color: #ddd;
+  color: red;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+.topnav-right a:hover {
+  color: blue;
+}
+
+.effects
+{
+  margin-top: 15px;
+  margin-left: 27%;
+  text-align: center;
+}
+
+@-webkit-keyframes hvr-wobble-to-bottom-right {
+  16.65% {
+    -webkit-transform: translate(8px, 8px);
+    transform: translate(8px, 8px);
+  }
+  33.3% {
+    -webkit-transform: translate(-6px, -6px);
+    transform: translate(-6px, -6px);
+  }
+  49.95% {
+    -webkit-transform: translate(4px, 4px);
+    transform: translate(4px, 4px);
+  }
+  66.6% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  83.25% {
+    -webkit-transform: translate(1px, 1px);
+    transform: translate(1px, 1px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@keyframes hvr-wobble-to-bottom-right {
+  16.65% {
+    -webkit-transform: translate(8px, 8px);
+    transform: translate(8px, 8px);
+  }
+  33.3% {
+    -webkit-transform: translate(-6px, -6px);
+    transform: translate(-6px, -6px);
+  }
+  49.95% {
+    -webkit-transform: translate(4px, 4px);
+    transform: translate(4px, 4px);
+  }
+  66.6% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  83.25% {
+    -webkit-transform: translate(1px, 1px);
+    transform: translate(1px, 1px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+.hvr-wobble-to-bottom-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-wobble-to-bottom-right:hover, .hvr-wobble-to-bottom-right:focus, .hvr-wobble-to-bottom-right:active {
+  -webkit-animation-name: hvr-wobble-to-bottom-right;
+  animation-name: hvr-wobble-to-bottom-right;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.nav-2{
+    margin-left: -8px;
+    overflow: hidden;
+    height: 55px;
+}
+
+.nav-2 a{
+    padding: 15px 20px;
+    color:black;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.nav-2 a:hover {
+  color: red;
+}
+
+
+.adjust{
+    margin-top:20px;
+    text-align:center;
+}
+
+.right {
+    margin-top: -18px;
+  float: right;
+}
+
+.right a:hover {
+  color: blue;
+}
+
+.text{
+    text-align: center;
+    color: dodgerblue;
+    width: 100%;
+    height: 400px;
+    font-size: 40px;
+}
+
+.approch{
+    text-align: center;
+    height: 600px;
+    width: 700px;
+    background-color: aqua
+}
+
+.row {
+  display: flex;
+    padding:20px;
+ margin-left: 28%;
+}
+
+.column {
+  flex: 50%;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 700px;
+  height: 600px;
+  padding: 20px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: dodgerblue;
+  font-size: 20px;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-box-back h2{
+    font-size: 60px;
+}
+
+.flip-box-back p{
+    text-align: left;
+    font-size: 20px;
+}
+
+.ideas{
+    margin: -8px;
+    height: 100px;
+    text-decoration-color: none;
+    color: white;
+    background-color: red;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.ideas h3{
+    padding: 30px;
+}
+
+#slider img
+{
+    display: block;
+    margin:auto;
+    width:400px;
+    height:300px;
+}
+#slider
+{
+    margin-top: 50px;
+    border: 2px solid black;
+    width:900px;
+    height:300px;
+    margin:20px auto;
+    position: relative;
+}
+button
+{
+    padding:10px;
+    border:none;
+    background: grey;
+    font-size: 40px;
+    color: black;
+    position: absolute;
+    top:42%;
+}
+.next
+{
+    border-radius: 10px 0px 0px 10px;
+    margin-left:869px;
+}
+.prew
+{
+    border-radius: 0px 10px 10px 0px;
+}

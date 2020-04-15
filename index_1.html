@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta property="og:image" content="https://ianlunn.github.io/Hover/hover.jpg" />
+		<meta property="og:site_name" content="Hover.css"/>
+		<meta property="og:title" content="Hover.css - A collection of CSS3 powered hover effects" />
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+		<title>Modified Funding Page</title>
+		<link href="index_1.css" rel="stylesheet" media="all">
+		<link href="css/hover.css" rel="stylesheet" media="all">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+	</head>
+	<body>
+	    <div class="topnav">
+            <a href="#home"><img src="index_1.jpg"/></a>
+            <div class="effects">
+            <a href="#news" class="hvr-wobble-to-bottom-right">Investment Management</a>
+            <a href="#contact" class="hvr-wobble-to-bottom-right">Consultancy</a>
+            <a href="#contact" class="hvr-wobble-to-bottom-right">Saving</a>
+            <a href="#contact" class="hvr-wobble-to-bottom-right">Funding</a>
+             </div>
+              <div class="topnav-right">
+                <a href="#search" class="hvr-wobble-to-bottom-right">Support ></a>
+                <a href="#about" class="hvr-wobble-to-bottom-right">Savings Planning >></a>
+              </div>
+        </div>
+        <div class="nav-2">
+           <div class=adjust>
+            <a href="#">Insight</a>
+            <a href="#">COVID19</a>
+            <a href="#">Financial Service</a>
+            <a href="#">Savings</a>
+            <a href="#">Global Srvice</a>
+            <a href="#">Pay here</a>
+            <a href="#"></a>
+           </div>
+           <div class="right">
+               <a href="#">Open Account >></a>
+               <a href="#">Live Value 20% >></a>
+           </div>
+        </div>
+        <div class="text">
+           <marquee behavior="alternate">
+            <h1>Helping doers to invest in their ideas <br> to make world a better place.</h3>
+            </marquee>
+        </div>
+        <div class="row">
+          <div class="flip-box">
+          <div class="flip-box-inner">
+           <div class="column flip-box-front">
+            <img src="image2.jpg" style="width:700px;height:600px">
+            </div>
+            <div class="flip-box-back">
+                <h2>Approach</h2>
+                 <h4>Who sees the infinite</h4>
+                 <p><br>&#8594 If your start-up could impact and confidence to touch the impossibilities. <br><br>&#8594 If your idea is worth in millions to maintain the live society. <br><br>&#8594 If you think you are crazy about your work and bring it in one's life for a purpose. <br><br>&#8594 True innovation along with purpose to serve and impact generations. <br><br>&#8594 Something you think only you can perform, the way is should be.</p>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class=" row">
+          <div class="flip-box">
+          <div class="flip-box-inner">
+           <div class="column flip-box-front">
+            <img src="image3.jpg" style="width:700px;height:600px">
+            </div>
+            <div class="flip-box-back">
+                <h2>Ideas</h2>
+                 <h4>Who sees the infinite</h4>
+                 <p><br>&#8594 If your start-up could impact and confidence to touch the impossibilities. <br><br>&#8594 If your idea is worth in millions to maintain the live society. <br><br>&#8594 If you think you are crazy about your work and bring it in one's life for a purpose. <br><br>&#8594 True innovation along with purpose to serve and impact generations. <br><br>&#8594 Something you think only you can perform, the way is should be.</p>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="ideas">
+            <h3>Share Your Ideas deck (investmentsmart@gmail.com)</h3>
+        </div>
+        <div>
+            <center>
+               <br>
+                <h1>Recent Startups:</h1><br>
+            </center>
+                <div id="slider">
+                    <div id="box">
+                        <a href="#"><img src="a.jpg"></a>
+                    </div>
+                    <button class="prew fa fa-chevron-left" onclick="prewImage()"></button>
+                    <button class="next fa fa-chevron-right" onclick="nextImage()"></button>
+                </div>
+                <script type="text/javascript">
+                    var slider_content=document.getElementById("box");
+                    var image = ['a' , 'b' , 'c' , 'd', 'e'];
+                    var i = 1;
+                    var j;
+                    function nextImage(){
+                        if(i<image.length){
+                            i=i+1;
+                        }
+                        else if(i==image.length-2){
+                            i=1;
+                        }
+                    slider_content.innerHTML = "<img src="+image[i-1]+".jpg>";
+                    }
+                    function prewImage(){
+                        if(i>1){
+                            i=i-1;
+                        }
+                        else if(i==image.length-2)
+                        {
+                            i=image.length-2;
+                        }
+                    slider_content.innerHTML = "<img src="+image[i-1]+".jpg>";
+                    }
+                    setInterval(nextImage,2000);
+                </script>
+        </div>
+        <div style="height: 30px"></div>
+
+	</body>
